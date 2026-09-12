@@ -7,6 +7,13 @@ terraform {
       version = "~> 4.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name = "pipeline"
+    storage_account_name = "pipelinestorage"
+    container_name = "containerpipeline"
+    key = "terraform.tfstate"
+    
+  }
 }
 
 provider "azurerm" {
