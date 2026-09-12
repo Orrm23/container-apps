@@ -9,7 +9,7 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name = "pipeline"
-    storage_account_name = "pipelinestorage"
+    storage_account_name = "pipelinestorage11"
     container_name = "containerpipeline"
     key = "terraform.tfstate"
     
